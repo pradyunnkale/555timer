@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1775495277.4592 "main.tex" "main.pdf" "main" 1775495278.11549 0
+["pdflatex"] 1775570407.6059 "main.tex" "main.pdf" "main" 1775570408.21446 2
   "/etc/texmf/web2c/texmf.cnf" 1773259470.61143 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
@@ -94,10 +94,11 @@
   "555_timer_diagram.png" 1775435816.28066 41432 7b95090f9dbf2035e70959aece0d8b44 ""
   "555_timer_monostable_diagram.png" 1775435088.68646 37854 3fc02d5987be291b4331755c8125b0d9 ""
   "555_timer_monostable_signals.png" 1775436514.2418 37111 6f40dd2f3e5588f2378bff39f4a3d28b ""
+  "experimental_astable.png" 0 -1 0 ""
   "experimental_monostable.png" 1775440285.68304 76200 c1bc11fcb475644ba0a4414fbcb8b392 ""
-  "main.aux" 1775495278.05909 2202 8bd24954d93bf1b79e455dda1c350e90 "pdflatex"
-  "main.out" 1775495278.05909 660 2568fe2b6c3518a4a5951760718c03fe "pdflatex"
-  "main.tex" 1775495277.04637 8105 c0803e74b6c40ac22f8fc0dfee49fb23 ""
+  "main.aux" 1775570408.16976 2450 3722c628b3bef0b9ccd6847aeb3226ef "pdflatex"
+  "main.out" 1775570408.17076 660 2568fe2b6c3518a4a5951760718c03fe "pdflatex"
+  "main.tex" 1775570406.41122 10452 63df3c86582d5ca43130d6ede5a40d76 ""
   (generated)
   "main.aux"
   "main.log"

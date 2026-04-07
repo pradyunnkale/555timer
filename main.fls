@@ -185,8 +185,8 @@ INPUT ./experimental_monostable.png
 INPUT ./experimental_monostable.png
 INPUT ./experimental_monostable.png
 INPUT ./experimental_monostable.png
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmti12.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmtt12.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmti12.tfm
 INPUT main.aux
 INPUT ./main.out
 INPUT ./main.out

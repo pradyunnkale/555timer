@@ -128,9 +128,34 @@ related to 2 of the pins (those being the DISCHARGE and THRESHOLD pins).
 I finally connected a push-button to the TRIGGER pin. I made sure to have a pull-up resistor because I do not want my input to be floating
 as this can cause erratic behavior in my circuit. The reason I use a pull-up is because the OUTPUT is HIGH when INPUT is LOW. 
 
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\columnwidth]{experimental_astable.png}
+	\caption{
+		\label{fig:experimental_astable}
+		555 Timer Astable Experiment Schematic
+	}
+\end{figure}
+
+In order to get a 60\% duty cycle and a period of 2 seconds. We need to use the equations for $t_H$ and $t_L$. Since we know that
+$t_H \cong 0.693 \times (R_A + R_B) \times C = 1.2$ and $t_L \cong 0.693 \times R_B \times C = 0.8$. In both of these equations, we
+can divide both sides by $0.693$ to get $1.7316 = (R_A + R_B) \times C$ and $1.1544 = R_B \times C$. I will just use $C = 100\mu F$ because
+I have that capacitor available in my kit. This leaves me with $R_B = 11544\Omega$ and $R_A + R_B = 17316\Omega$, using the value we have 
+for $R_B$, we get that $R_A = 5772\Omega$. Since we do not have these exact values, for $R_A$ I will be using a $5.6k\Omega$ resistor and 
+or $R_B$ I will be using a $12k\Omega$ resistor. This will give us a duty cycle of approximately 60\% over a 2 second period. $f = \frac{1}{T} = 0.5$ Hz where $T = t_H + t_L = 2$.
+
+In order to get a 75\% duty cycle and a period of 1 second. We need to use the equations for $t_H$ and $t_L$. Since we know that $t_H \cong 0.693 \times (R_A + R_B) \times C = 0.75$ and $t_L \cong 0.693 \times R_B \times C = 0.25$. I am going to start with making $C = 100\mu F$
+because I have that capacitor available in my kit. This gives the equations $0.75 = (0.693 \times 100 \times 10^{-6}) (R_A + R_B)$ and $0.25 = (0.693 \times 100 \times 10^{-6}) (R_B)$, isolating for $R_B$ in the 2nd equation we get $R_B = 3607\Omega$. Isolating for $R_A$ in the first equation we get $R_A = 7215\Omega$. $f = \frac{1}{T} = 1$ Hz where $T = t_H + t_L = 1$.
+
+Since I already had the 555 Timer monostable cirucit built, I started with whatever I had there. As you can see, since I was given
+that circuit to start out with, connecting the rest of the circuit to make it astable circuit. I first took out the input as I no longer needed the input (since the astable circuit will oscillate on its own).
+
 
 \section{Results and Discussion}
 
+For the monostable mode, the theoretical result is what I have calculated above. However since we are not using a resistor with a 
+repeating decimal, I will recalculate the theoretical value of the pulse based on the selection of resistors.
+$t_w = 1.1 \times 27000 \times 100\mu F = 2.97s$.
 
 
 
